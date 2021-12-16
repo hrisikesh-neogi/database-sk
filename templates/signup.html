@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SIGN UP</title>
+	<link rel="icon" type="image/x-icon" href="/static/assets/favicon.ico" />	
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="/static/signup/css/nunito-font.css"> 
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="/static/signup/css/style.css"/>
+</head>
+<body>
+	<div class="form-v9">
+	<div class="page-content">
+		<nav class="navMenu" style = "display: inline-block; position: absolute; top: 50; left: 50;">
+			<a href="/">Home</a>
+			
+			<!-- <a href="">Work</a>
+			<a href="">About</a> -->
+			<div class="dot"></div>
+		</nav>
+		
+		<div class="form-v9-content" >
+			<form class="form-detail" action="/signup/store" method="post">
+				<div class="error" style = "color: rgb(255, 255, 255); font-size: 20px; font-weight: bold;text-align: center; text-shadow:rgb(255, 0, 0)"> 
+					{{msg}}
+					</div>
+				<h2>Create an Account</h2>
+				<p class="hint-text" style = "
+					color: rgb(255, 255, 255);
+					text-align: center;
+					margin-bottom: 20px;
+					text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);">
+					
+					Sign up with your Name and email address</p>
+				<div class="form-row-total">
+					<div class="form-row">
+						<input type="text" name="username" id="username" class="input-text" placeholder="Your Name" required = "required">
+					</div>
+					<div class="form-row">
+						<input type="text" name="email" id="email" class="input-text" placeholder="Your Email" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" required = "required">
+					</div>
+					
+				</div>
+				<div class = "form-row-total">
+					 <div class="form-row">
+						<input type="text" name="phone" id="phone" class="input-text" placeholder="Phone Number" required = "required">
+					</div>
+					<div class="form-row" style = " margin-bottom: 20px ;text-align: center;color:#ffffff; text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+								font-family: 'Lucida Sans', 
+									'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> <h5>Select Department:</h5>
+						<select  id="department"  name="department" class="input-text" style = "border-radius: 50px;
+								outline: none !important;
+								width: 300px; height: 50px;
+								background-color: rgb(58, 0, 0);
+								border: 2px solid rgb(255, 72, 0);
+								text-shadow: #ffffff;
+								text-align: center;
+								"
+								type="dropdown" placeholder= "department" 
+										aria-label="Enter desired department" data-sb-validations="required,departmanent" >
+											<option placeholder="Enter department">Select department</option>
+											<option value="writing">Writing</option>
+											<option value="art">Art</option>
+											<option value="photography">Photograpy</option>
+											<option value="music">Music</option>
+											<option value="vocal">Vocal</option>
+							</select>
+					</div>
+				</div>
+				
+				<div class="form-row-total">
+					<div class="form-row">
+						<input type="password" name="password" id="password" class="input-text" placeholder="Your Password" required>
+					</div>
+					<div class="form-row">
+						<input type="password" name="comfirm_password" id="comfirm_password" class="input-text" placeholder="Comfirm Password" required>
+					</div>
+					
+				</div>
+				<div class="form-row-last">
+					<input type="submit" name="register" class="register" value="Register">
+				</div>
+				<div class="text-center" style="text-align: center; margin: 0; padding: 0; color: #fff;">
+			
+			
+			
+				
+					Already have an account? <a href="/login">Login here</a></div>
+			</div>
+			</form>
+		
+		
+	</div>
+	</div>
+	
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

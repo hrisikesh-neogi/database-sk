@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Mongo Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Mongo Page</h1>
+
+    <div class="form">
+        <div class = "heading">
+             <h2> MEMBERS' DATASET UPLOAD </h2>  
+        </div>
+
+        <form action="/mongo/bulk_up" method = 'POST'>
+            <input type="text" name="collection_name" placeholder="collection name" required="required">
+            <input type = "text" name="path" placeholder="path" required="required" >
+ 
+
+            <input type="submit" value="insert data into database" style="background-color: #2900af;
+            border-radius: 12px;;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;">
+        </form>
+    </div>
+    <div class="form">
+        <h2> WRITERS' DATASET UPLOAD </h2>  </div>
+        <form action="/writer/mongo/writers" method = 'POST'>
+            <input type="text" name="collection_name" placeholder="collection name" required="required">
+            <input type = "text" name="path" placeholder="path" required="required" >
+ 
+
+            <input type="submit" value="insert data into database" style="background-color: #0069af;
+            border-radius: 12px;;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;">
+        </form>
+        </div>
+            <div> 
+                <h2> See member's datasets </h2>
+                <div>
+                    <button onclick="window.open('https://docs.google.com/spreadsheets/d/1vsuls_TXrUO762Sva_w4fYWlevX1GhsQecC4pD_iyFg/edit#gid=702533427')" style="background-color: #007404;
+                        border: none;
+                        color: white;
+                        padding: 15px 32px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                        margin: 4px 2px;
+                        cursor: pointer;">
+                        sk members 
+                    </button>
+
+                    <button onclick="window.open('https://docs.google.com/spreadsheets/d/15ed5-_dm3DY-2pUlWyCYQgePsdX8RghUnR8jpzUpS1I/edit#gid=2085522622')" style="background-color: #007404;
+                        border: none;
+                        color: white;
+                        padding: 15px 32px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                        margin: 4px 2px;
+                        cursor: pointer;">
+                        sk writers
+                    </button>
+                </div>
+            </div>
+
+
+
+    </div>
+
+</div> 
+</h2>
+
+</div>
+{% endblock %}
+

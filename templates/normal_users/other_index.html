@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile</title>
+    <link rel="icon" type="image/x-icon" href="/static/assets/img/favicon.ico" />
+	<link rel="stylesheet" href="/static/user_profile/fontawesome/css/all.min.css"> 
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+    <link href="/static/user_profile/css/user_bootstrap.min.css" rel="stylesheet">
+    <link href="/static/user_profile/css/templatemo-xtra-blog.css" rel="stylesheet">
+<!--
+    
+TemplateMo 553 Xtra Blog
+
+https://templatemo.com/tm-553-xtra-blog
+
+-->
+</head>
+<body>
+	<header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+                    <button onclick="window.open('/logout')" style=" background-color: #ff0000b4;
+							border : None;
+
+                            border-radius: 100px;
+                            color: white;
+                            padding: 7px 15px;
+                            text-align: center;
+                            text-decoration: none;
+                            display: inline-block;
+                            font-size: 16px;
+                            margin: 0px 0px;
+                            cursor: pointer;">
+                            Log Out
+				</button>
+
+                <button onclick="window.open('/')" style=" background-color: #ff66008e;
+                        border : None;
+
+                        border-radius: 100px;
+                        color: white;
+                        padding: px 15px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                        margin: 0px 0px;
+                        cursor: pointer;">
+                        Home Page
+                </button>                                                   
+                <!-- <button onclick="window.open('/user/profile')" style=" background-color: #ff6600d2;
+                    border : None;
+
+                    border-radius: 100px;
+                    color: white;
+                    
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 0px 0px;
+                    cursor: pointer;">
+                    Profile
+            </button> -->
+            <div class="tm-site-header">
+                
+                <div class="mb-3 mx-auto tm-site-logo">
+                <img src = "/static/login_Data/images/sk_logo_new.jpg" alt = "logo" class = 'tm-site-logo'>
+            </div>            
+                <h1 class="text-center" style = "font-family: garamond; font-size:30px;">Hello</h1>
+                <h1> 
+                    {{username}}
+                </h1>
+                <div class = 'text' style ="text-align: center;font-family: 'Courier New', Courier, monospace;">
+                    <p>
+                        Department: {{department}}
+                       
+                    </p>
+                    </p>
+
+                </div>
+            </div>
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                    <li class="tm-nav-item active"><a href="#" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Your Home
+                    </a></li>
+                    <li class="tm-nav-item"><a href= "/user/profile/shohor_out/departments" class="tm-nav-link">
+                        <i class="fas fa-pen"></i>
+                        Departments
+                    </a></li>
+                    
+                    
+                </ul>
+            </nav>
+            <div class="tm-mb-65">
+                <div class="tm-mb-65">
+                    <a href="https://facebook.com/shohurekotha20" class="tm-social-link">
+                        <i class="fab fa-facebook tm-social-icon"></i>
+                    </a>
+                    <a href="https://wa.me/message/QLKW3VMPCFBCP1" class="tm-social-link">
+                        <i class ="fab fa-whatsapp tm-social-icon"></i>
+                    </a>
+                    <a href="https://instagram.com/shohurekotha20/" class="tm-social-link">
+                        <i class="fab fa-instagram tm-social-icon"></i>
+                    </a>
+                </div>
+            <p class="tm-mb-80 pr-5 text-white">
+                <h3 class = "message" style = "color: rgb(255, 157, 0); font-size: 30px; font-weight: bold;">
+                    Welcome note! 
+                </h3>
+                Hey, Thanks for being a member of the SHOHOR. We always welcome fresh talents like you. 
+                We always appreciate your efforts and contributions for the Shohor community. We hope you will 
+                be an amazing part of the Shohor community. Hope you are comfortable here. We always want to listen 
+                to everyone. Your ideas and suggestions we pay attention to. We will always be there to help you. 
+            </p>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <main class="tm-main">
+            <!-- Search form -->
+            <div class="row tm-row">
+                <div class="col-12">
+                   <div class="heading" style = " text-align: center; color : #ffff; padding: 20px;
+                    
+                    display: block;
+                    height: 100px;
+                    font-size: 16px;
+                    text-align: inline;
+                    background-color: rgba(141, 89, 5, 0.507);
+                    width: 100;
+                    margin-right: 30px;
+                    border-radius: 20px;
+                    border-color: rgb(0, 0, 0);
+                    filter:  drop-shadow(0px 0px 5px rgb(0, 0, 0));
+                    font-size: 1rem;">
+                    <h1 class = "text" style = "font-size: 1.6rem;">
+                        Hey, {{username}}!  
+                        <h5 class = "department" style = "font-family: 'Courier New', Courier, monospace;"> 
+                        Dept : {{department}}</h5>
+                    </h1>
+
+                                       
+   
+            </div>            
+            <div class="row tm-row">
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a  class="effect-lily tm-post-link tm-pt-20">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fposts%2F421331959702116&show_text=true&width=500" 
+                        width="300" height="370" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <span class="position-absolute tm-new-badge">Art Work</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">International Artist's Work</h2>
+                        <span style = "color:rgb(0, 204, 255)"> Solanky Paul, U.S.A </span>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        We have not only artists and members from india or west bengal, but we also have artists/members from other countries 
+                        like U.S.A and BANGLADESH. We are proud to have them with us at our Shohor.
+                        Solanky Roy is a friend from BANGLADESH. He's with us for so many months, we appreciate people like him
+                        who goes beyond their boundaries and creates bonds. He's a great friend and a great writer. You can read his 
+                        stories on our <a href="http://www.facebook.com/shohurekotha20">Facebook page. </a>
+                        <br> <span class="tm-color-primary">#International_Members</span>
+                        <span class="tm-color-primary">#CreativityHasNoBoundaries</span>
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Solanky Paul </span>
+                        <span class="tm-color-primary">Artist </span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Shohure Kotha</span>
+                        <span>Art</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="https://www.facebook.com/shohurekotha20" class="effect-lily tm-post-link tm-pt-60">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fposts%2F428973955604583&show_text=false&width=500" 
+                        width="300" height="230" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <span class="position-absolute tm-new-badge">Art Work</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Art works</h2>
+                        <span style = "color:rgb(0, 204, 255)"> Naiwrita Joarder </span>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        We have some beautiful art works in our gallery. Our talented artists are
+                        working hard to make art works for you. We appreciate your efforts and contributions.
+                        Artists like 
+                        <u style = "color:rgb(255, 145, 1)">Naiwrita</u> are very precious to us.
+                        I hope you also will try to create some amazing art works.
+
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Naiwrita Joarder</span>
+                        <span class="tm-color-primary">Art</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Art</span>
+                        <span>Shohure Kotha</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="" class="effect-lily tm-post-link tm-pt-60" >
+                        <!--   -->
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fposts%2F427637812404864&show_text=false&width=500" 
+                        width="300" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                       
+                        <span class="position-absolute tm-new-badge">Photography</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Photography</h2>
+                        <span style="color:aqua">Tanusri Majumder</span>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        <a rel="nofollow" href= "https://www.facebook.com/hashtag/midnightshohor" target="_blank">Photography</a> is something 
+                        that we love to share in our page. We have some talented photographers who are working hard to click
+                        some amazing photos for you. We appreciate your efforts and contributions. Photographers like
+                        <u style = "color:rgb(255, 145, 1)">Tanusri</u> is very precious to us.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Tanusri Majumder</span>
+                        <span class="tm-color-primary">Photography</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Shohure Kotha</span>
+                        <span>Photography</span>
+                    </div>
+                </article> 
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="https://www.facebook.com/shohurekotha20" class="effect-lily tm-post-link tm-pt-60">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fposts%2F425760535925925&show_text=false&width=500"
+                         width="300" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <span class="position-absolute tm-new-badge">Photogrphy</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Kolkata Photography</h2>
+                        <span style = "color:rgb(0, 204, 255)"> Arnab Ghorui</span>
+                    </a>                    
+                    <!-- <p class="tm-pt-30">
+                        We are proud to have writers like Raya. She is a writer of creativity. With her creativity
+                        she has created a lot of short stories. We are proud to have writers like her. Hope our other writers will find it inspiring and feel motivated. -->
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Arnab Ghorui</span>
+                        <span class="tm-color-primary">Photography</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Photography</span>
+                        <span>Shohure Kotha</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="https://www.facebook.com/hashtag/midnightshohor" class="effect-lily tm-post-link tm-pt-20">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fposts%2F424461539389158&show_text=false&width=500" 
+                        width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                         <span class="position-absolute tm-new-badge">Wild life Photography</span>
+                         <h2 class="tm-pt-30 tm-color-primary tm-post-title">Wild Life Photography</h2>
+                         <span style = "color:rgb(0, 204, 255)"> Tanusri Majumder</span>
+
+                    </a>                    
+                    <!-- <p class="tm-pt-30">
+                        As told before, we recreate the midnight through this segment, We try to portray each and every small and sweet as well as nostalgic 
+                    moments here, not only through <u>THE MIDNIGHT SHOHOR</u> segment, but through every other segment.
+                    </p> -->
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Tanusri Majumder</span>
+                        <span class="tm-color-primary">Wild life Photography</span> 
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Photography</span>
+                        <span>Shohure Kotha</span>
+                    </div>
+                </article>
+                
+                    <hr>
+                    
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a class="effect-lily tm-post-link tm-pt-60">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fposts%2F430650545436924&show_text=false&width=500" 
+                        width="300" height="370" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <span class="position-absolute tm-new-badge">Popular</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Writing</h2>
+                        <span style = "color:rgb(0, 204, 255)"> Prity's Best</span>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        The beast, the masterpiece, <u>Priti Sarkar</u> is not only inspiring, but also is a great
+                        achievement for Shohor. We are proud to have writers like her. Hope our other writers will find it inspiring and feel motivated.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Sayani Maity</span>
+                        <span class="tm-color-primary">Writing</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Writing</span>
+                        <span>Shohure Kotha</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a class="effect-lily tm-post-link tm-pt-60">
+                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fposts%2F413297830505529&show_text=true&width=500"
+                             width="300" height="370" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <span class="position-absolute tm-new-badge">Popular</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Writing</h2>
+                        <span style = "color:rgb(0, 204, 255)"> Sayani's Best</span>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        The writing itself was a masterstroke of <u>Sayani Maity.</u> It's not only inspiring, but also a great
+                        achievement. We are proud to have writers like her. Hope our other writers will find it inspiring and feel motivated.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Sayani Maity</span>
+                        <span class="tm-color-primary">Writing</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Writing</span>
+                        <span>Shohure Kotha</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a  class="effect-lily tm-post-link tm-pt-60" >
+                        <!--   -->
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fposts%2F422837332884912&show_text=false&width=500" 
+                        width="300" height="370" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                       
+                        <span class="position-absolute tm-new-badge">Popular</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Midnight Shohor</h2>
+                        <span style="color:aqua">Subhanjan's best</span>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        <a rel="nofollow" href= "https://www.facebook.com/hashtag/midnightshohor" target="_blank">Midnight Shohor</a> is a midnight segment
+                        of Shohor. It is a very popular segment of Shohor. We use to portray the midnight through this segment. Eveyrday at midnight, it use to be 
+                        posted from Shohure Kotha. We are proud to have writers like Subhanjan. Hope our other writers will find it inspiring and feel motivated.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Subhanjan Baral</span>
+                        <span class="tm-color-primary">Writing</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Shohure Kotha</span>
+                        <span>Midnight Shohor</span>
+                    </div>
+                </article> 
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a  class="effect-lily tm-post-link tm-pt-60">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fposts%2F417961536705825&show_text=false&width=500" 
+                        width="300" height="370" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <span class="position-absolute tm-new-badge">Popular</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Conversational Story</h2>
+                        <span style = "color:rgb(0, 204, 255)"> Trisha's Best</span>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        We are proud to have writers like Trisha. She is a writer of creativity. When she is writing, she is always trying to make
+                        something new. We use to post her stories from Shohure Kotha. Hope our other writers will find it inspiring and feel motivated.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary"> Trisha Sarkar</span>
+                        <span class="tm-color-primary">Writing</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Conversational Writing</span>
+                        <span>Shohure Kotha</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="https://www.facebook.com/watch/116128910222424/121425210065702" class="effect-lily tm-post-link tm-pt-60">
+                        <div class="tm-post-link-inner">
+                            <img src="/static/user_profile/img/vocal posts/dz.jpg" alt="Image" class="img-fluid">                            
+                        </div>
+                        <span class="position-absolute tm-new-badge">Popular</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title" >DEAR ZINDAGI</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        There is a Bridge between music,life and love that is called Zindagi. Dear Zindagi
+                        is just a small part of the Zindagi that we live in and that is the reason why we
+                        are here RECREATING the musics of our life and making it a part of our life.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Dear Zindagi . Popular Segments</span>
+                        <span class="tm-color-primary"></span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Shohure Kotha</span>
+                        <span>Vocal Department</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="https://www.facebook.com/shohurekotha20/live_videos/" class="effect-lily tm-post-link tm-pt-60">
+                        <div class=" tm-post-link-inner">
+                            <img src="/static/user_profile/img/vocal posts/live.jpg" alt="Image" class="img-fluid">                            
+                        </div>
+                        <span class="position-absolute tm-new-badge">Live Playlist</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">SHOHURE ADDA</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        <a rel="nofollow" href="https://www.facebook.com/shohurekotha20/live_videos/" target="_blank">Shohure Adda</a>  is a 
+                        live segment that is being held on the facebook page of the Shohure Kotha on evey saturday. Hosted by Swarnali Raha, shohure adda is
+                        nowadays a popular segment in the Shohure Kotha community. There we have been discussing about various culture both 
+                        in the form of songs and in the form of stories or recitations. We have been discussing about various culture both of East (BANGLADESH) and West Bengal.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Shohure Kotha. Live . Shohure Adda</span>
+                        <span class="tm-color-primary"></span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Shohure Kotha</span>
+                        <span>Live</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a  class="effect-lily tm-post-link tm-pt-20">
+                        
+                            <div class="video" alt="Image" class="">
+                                <iframe src="https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fvideos%2F466785291218785%2F&show_text=false&width=560&t=0" 
+                                width=320px height=200px style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        </div>
+                        <span class="position-absolute tm-new-badge">Audio Story</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Tomar Holo Shuru, Rabindrajayanti Special</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        The <u>Audio Story</u> Segment is not only creative as well as challenging. But
+                        When we meet enthusiastic people, we can always find a way to make them. <u>Subhanjan Baral</u>, the head of the audio story department 
+                        along with the other creative and talented people of the department, have been creating a lot of audio stories. 
+                        The audio stories are being uploaded on the facebook page of the Shohure Kotha.
+                        <u>TOMAR HOLO SHURU</u> we made in the Rabindrajayanti,2021, and that was something that we are proud of. You can listen 
+                        to the audio story here itself.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Shohure Kotha . Audio Story</span>
+                        <span class="tm-color-primary"></span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Shohure Kotha</span>
+                        <span>Audio Story</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a  class="effect-lily tm-post-link tm-pt-20">
+                        <div class="video">
+                            <div  alt="Image" class="img-fluid">
+                                <iframe src="https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fvideos%2F820439138516273%2F&show_text=false&width=560&t=0"
+                                 width=320px height=200px style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        </div>
+                        <span class="position-absolute tm-new-badge">Audio Story</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">BORODIN, X-mas Special</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        In <u>SHOHOR</u>, like any other SHOHOR ( city), we celebrate each and every festivials. In 2020 X-mas we created
+                        this audio story. It was basically a love story which was happening in the <u>Borodin</u>, means Cristmas.
+                		</p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Shohure Kotha. Vocal department</span>
+                        <span class="tm-color-primary"></span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Shohure kotha, X-mas special audio story</span>
+                        <span></span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a  class="effect-lily tm-post-link tm-pt-20">
+                        <div class="text">
+                            <dic class = "text" alt="Image" class="img-fluid">
+                                <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fvideos%2F619941759363797%2F&show_text=false&width=560&t=0" 
+                                width=320px height=200px style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        </div>
+                        <span class="position-absolute tm-new-badge">Music</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">The girls like you Indian Fusion,
+                            by Aritra & Abhirup
+                        </h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        We have some talented musicians like Aritra and Abhirup with us. They have been creating some
+                        music for us. We have uploaded the music on the facebook page of the Shohure Kotha. You can listen to the music here itself.
+
+                        <br>
+                        <span class="tm-color-primary"></span>
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Shohure Kotha. Music </span>
+                        <span class="tm-color-primary">Aritra | Abhirup</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Shohure Kotha</span>
+                        <span>Music</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a  class="effect-lily tm-post-link tm-pt-20">
+                        <div class="video">
+                            <div class= "video" alt="Image" class="img-fluid" >
+                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fvideos%2F3018876648384732%2F&show_text=false&width=476&t=0" 
+                            width=320px height=320px style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                            
+                        </div>
+                        <span class="position-absolute tm-new-badge">Theme song</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">The Theme Song of Shohure Kotha</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        Through this theme song we tried to portrait our motives and aspects of the Shohure Kotha. Have a listen, hope you like it. 
+                        <u>Anwesha</u> and <u>Suchandra</u> sung so well together that this theme song will always be our favorite theme song ever.                 </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Shohure Kotha. Theme Song</span>
+                        <span class="tm-color-primary">
+
+                        </span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Shohure Kotha</span>
+                        <span>Music</span>
+                    </div>
+                </article>
+            </div>
+            <!-- <div class="row tm-row tm-mt-100 tm-mb-75">
+                <div class="tm-prev-next-wrapper">
+                    <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next disabled tm-mr-20">Prev</a>
+                    <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next">Next</a>
+                </div>
+                <div class="tm-paging-wrapper">
+                    <span class="d-inline-block mr-3">Page</span>
+                    <nav class="tm-paging-nav d-inline-block">
+                        <ul>
+                            <li class="tm-paging-item active">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">1</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">2</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">3</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">4</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>                
+            </div>            
+            <footer class="row tm-row">
+                <hr class="col-12">
+                <div class="col-md-6 col-12 tm-color-gray">
+                    Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-external-link">TemplateMo</a>
+                </div> -->
+                <div class="col-md-6 col-12 tm-color-gray tm-copyright" style="color: rgba(255, 255, 255, 0.37)">
+                    Copyright &copy; Shohure Kotha 2021
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="/static/user_profile/js/jquery.min.js"></script>
+    <script src="/static/user_profile/js/templatemo-script.js"></script>
+</body>
+</html>

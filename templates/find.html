@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>DATA PAGE
+    FOR collection name:{{ collection_name }}</title>
+</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<h1 style="text-align: center">COLLECTION : {{collection_name}}</h1>
+
+<div class="content">
+    <div> 
+        <h2> check for conditional data </h2>  </div>
+    <div class="form">
+        <form action="/find/find_Data" method = 'POST'>
+             <input type="text" name="collection_name" placeholder="collection name"> 
+            <br> <input type = "text" name="column_name" placeholder="column name"  > <br>
+            <input type = "text" name="value" placeholder="value"  > 
+
+
+            <br> <input type="submit" value="check for the data" style = "background-color: #a05a00;
+            border-radius: 12px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;"> <br>
+
+        </form>
+
+        <div class="buttons">
+            <div> 
+                <h2> check for whole dataset </h2>  </div>
+            <div class="content">
+                <div class="form">
+                    <form action="/find/sk_dataset" method = 'POST'>
+                        <input type="text" name="collection_name" placeholder="collection name">
+                        <input type="text" name="dataset_names" placeholder="writer/member">
+                    
+            
+            
+                        <input type="submit" value="check for the whole dataset" style="background-color: #700000;
+                        border-radius: 12px;
+                        color: white;
+                        padding: 15px 32px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                        margin: 4px 2px;
+                        cursor: pointer;">
+                    </form>
+                </div>
+            <button onclick="window.open('/find/columns')" style="background-color: #007404;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;">
+                show available columns
+            </button>
+
+    
+</div>
+{% endblock %}
+

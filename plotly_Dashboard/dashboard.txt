@@ -1,0 +1,52 @@
+import dash
+from dash import html
+from dash import dcc
+from dash import dash_bootstrap_components
+from dash import dash_table
+import plotly.graph_objs as go
+from dash.dependencies import Input, Output
+import plotly.express as px
+import pandas as pd
+from sending_Class import mongo_operation
+# from datetime import datetime
+from member_detail import *
+from configparser import ConfigParser 
+from utils import get_config
+
+config = get_config('config.ini')
+print(config['client_url'])
+
+db = mongo_operation(config['client_url'], config['database'])
+data = db.find(config['collection_name'], {} )
+
+fig = px.bar(data, x='department', y= 'name', color='department', barmode='group')
+fig2 = px.choropleth(data, locations='department', color='department')
+
+def create_dashboard(flask_app):
+    app = dash.Dash(
+        server=flask_app,
+        name = "dashboard",
+        url_base_pathname='/dashboard/'
+    )
+    df= data
+    app.layout = dash_table.DataTable(
+    id='table',
+    columns=[{"name": i, "id": i} for i in df.columns],
+    data=df.to_dict('records')
+)
+    # app.layout = html.Div(children=[
+    #     html.H1(children='Hello Dash'),
+    #     html.Div(children='''
+    #         Dash: A web application framework for Python.
+    #     '''),
+    #     dcc.Graph(
+    #         id='example-graph',
+    #         figure=fig
+    #     )
+    # ] )
+    return app
+
+
+
+
+

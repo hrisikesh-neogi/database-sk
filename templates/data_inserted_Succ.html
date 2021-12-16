@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>DATA PAGE
+    FOR collection name:{{ collection_name }}</title>
+</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<h1 style="text-align: center">DATA INSERTED SUCCESSFULLY INTO COLLECTION : {{collection_name}}</h1>
+{% endblock %}

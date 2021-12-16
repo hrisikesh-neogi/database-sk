@@ -1,0 +1,12 @@
+#for writing department
+#api url
+/login/user_login/writing/home
+/login/user_login/writing/writing_department
+/login/user_login/writing/writing_hod
+/login/user_login/writing/admins_details
+
+#for vocal department
+/login/user_login/vocal/home
+/login/user_login/vocal/vocal_department
+/login/user_login/vocal/vocal_hod
+/login/user_login/vocal/admins_details

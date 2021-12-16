@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIGN UP</title>
+<link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<style>
+	body {
+
+		width: 100%;  
+		min-height: 100vh;
+		margin-right: 50%;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("/static/assets/img/bg.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size: cover;
+		font-family: 'Roboto', sans-serif; 
+	}
+    .form-control {
+		font-size: 16px;
+		transition: all 0.4s;
+		box-shadow: none;
+	}
+	.form-control:focus {
+        border-color: #d3a100;
+    }
+    .form-control, .btn {
+        border-radius: 50px;
+		outline: none !important;
+    }
+	.signup-form {
+		width: 480px;
+		
+    	margin: 0 auto;
+		padding: 30px 0;
+	}
+    .signup-form form {
+		position: relative;
+		border-radius: 5px;
+    	margin-bottom: 20px;
+        background: none;
+        box-shadow: 0px 2px 2px rgba(255, 255, 255);
+        padding: 40px;
+    }
+	.signup-form a {
+		color: #dba800;
+	}    
+	.signup-form h2 {
+		text-align: center;
+		font-size: 34px;
+		margin: 10px 0 15px;
+		color: rgb(255, 208, 0);
+		text-shadow: 0px 4px 4px rgba(155, 95, 0, 0.7);
+	}
+	.signup-form .hint-text {
+		color: rgb(255, 255, 255);
+		text-align: center;
+		margin-bottom: 20px;
+		text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+	}
+	.signup-form .form-group {
+		margin-bottom: 20px;
+	}
+    .signup-form .btn {        
+        font-size: 18px;
+		line-height: 26px;
+        font-weight: bold;
+		text-align: center;
+    }
+	.signup-btn {
+		text-align: center;
+        background: #dba800;
+		border-color: #bb8f00;
+		transition: all 0.4s;
+	}
+	.signup-btn:hover {
+		background: #d3750a;
+		opacity: 0.8;
+	}
+    .or-seperator {
+        margin: 50px 0 15px;
+        text-align: center;
+        border-top: 1px solid #e0e0e0;
+    }
+    .or-seperator b {
+        padding: 0 10px;
+		width: 40px;
+		height: 40px;
+		font-size: 16px;
+		text-align: center;
+		line-height: 40px;
+		background: #fff;
+		display: inline-block;
+        border: 1px solid #e0e0e0;
+		border-radius: 50%;
+        position: relative;
+        top: -22px;
+        z-index: 1;
+    }
+    .social-btn .btn {
+		color: #fff;
+        margin: 10px 0 0 15px;
+		font-size: 15px;
+		border-radius: 50px;
+		font-weight: normal;
+		border: none;
+		transition: all 0.4s;
+    }	
+	.social-btn .btn:first-child {
+		margin-left: 0;
+	}
+	.social-btn .btn:hover {
+		opacity: 0.8;
+	}
+	.social-btn .btn-primary {
+		background: #507cc0;
+	}
+	.social-btn .btn-info {
+		background: #64ccf1;
+	}
+	.social-btn .btn-danger {
+		background: #df4930;
+	}
+	.social-btn .btn i {
+		float: left;
+		margin: 3px 10px;
+		font-size: 20px;
+	}
+/* Responsive */
+@media screen and (max-width: 1199px) {
+	.signup-form {
+	    margin: 185px 20px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.signup-form .form-group {
+		flex-direction: column;
+		-o-flex-direction: column;
+		-ms-flex-direction: column;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+	.signup-form .form-row {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 575px) {
+	.signup-form .form-detail {
+	    padding: 30px 45px 30px 10px;
+	}
+}
+
+
+
+.navMenu {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: ;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #fddb3a;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(110px);
+  transform: translateX(110px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(285px);
+  transform: translateX(285px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+</style>
+</head>
+<body>
+	<div style="overflow: hidden; padding: 0; width: 100%; height: 100%; position: relative; ">
+		<nav class="navMenu" style = "display: inline-block; position: absolute; top: 50; left: 50;">
+			<a href="#">Home</a>
+			<a href="#">Blog</a>
+			<a href="#">Work</a>
+			<a href="#">About</a>
+			<div class="dot"></div>
+		</nav>
+
+		
+		<div class="signup-form">
+			<form action="/signup/store" method="post">
+				<div class="error" style = "color: rgb(255, 255, 255); font-size: 20px; font-weight: bold;text-align: center; text-shadow:rgb(255, 0, 0)"> 
+					{{msg}}
+					</div>
+				<h2>Create an Account</h2>
+				<p class="hint-text">Sign up with your Name and email address</p>
+			
+				<div class="form-group">
+					<input type="text" class="form-control input-lg" name="username" placeholder="Username" required="required">
+				</div>
+				<div class="form-group">
+					<input type="email" class="form-control input-lg" name="email" placeholder="Email Address" required="required">
+				</div>
+				<div class="form-group">
+					<input type="phone number" class="form-control input-lg" name="phone" placeholder="Phone Number" required="required">
+				</div>
+				<div class="form-group" style = "text-align: center;color:#ffffff; text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);font-family: 'Lucida Sans', 
+				'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> <h5>Select Department:</h5>
+						<select id="department"  name="department" class="form-control input-lg" type="dropdown" placeholder= "department" 
+								aria-label="Enter disired department" data-sb-validations="required,departmanent" >
+								<option placeholder="Enter department">Select department</option>
+								<option value="writing">Writing</option>
+								<option value="art">Art</option>
+								<option value="photography">Photograpy</option>
+								<option value="music">Music</option>
+								<option value="vocal">Vocal</option>
+							</select>
+					</div>
+				<div class="form-group">
+					<input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required">
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control input-lg" name="confirm_password" placeholder="Confirm Password" required="required">
+				</div>  
+				<div class="form-group">
+					<button type="submit" class="btn btn-success btn-lg btn-block signup-btn">Sign Up</button>
+				</div>
+			</form>
+			<div class="text-center">Already have an account? <a href="/login">Login here</a></div>
+		</div>
+	</div>
+</body>
+</html>

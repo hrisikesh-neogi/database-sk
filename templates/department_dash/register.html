@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Department Registration</title>
+        <link rel="icon" type="image/x-icon" href="/static/assets/favicon.ico" />
+
+        <link href="/static/css/admin_styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-primary">
+        <div id="layoutAuthentication">
+            <div id="layoutAuthentication_content">
+                <main>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-7">
+                                <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                    
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Create Account</h3></div>
+                                    <div ><h5 class="text-center" style="text-align: center; padding: 20px; font-size: 20px ; 
+                                        font-family: 'Courier New', Courier, monospace  ;
+                                            color : rgb(255, 0, 0); background: none; text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.329);">
+                                            {{msg}}
+                                        </h5></div>
+                                    <div class="card-body">
+                                        <form class = "form" action = "/department/register" method = "post">
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <!-- <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" id="name" type="text" name = 'name' placeholder="Enter your name" />
+                                                        <label for="name">Name</label>
+                                                    </div> -->
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="department">Department</label>
+                                                    <select name="department" required ="required">
+                                                        <option value="writer">Writing</option>
+                                                    
+                                                        <option value="singer">Singing</option>
+                                                        <option value="artist">Art</option>
+                                                       
+                                                        <option value="vocal artist">Vocal</option>
+                                                        <option value="photographer">Photography</option>
+                                                        <!-- <option value="dancer">Dancer</option> -->
+                                                        <option value="pr">Pr Coordinator</option>
+                                                        
+                                                    </select>
+                                                    
+                                                </div>
+                                            </div>
+                                            <!-- <div class="form-floating mb-3">
+                                                <input class="form-control" id="inputEmail" type="email" name ='email' placeholder="name@example.com" />
+                                                <label for="inputEmail">Email address</label>
+                                            </div> -->
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" id="inputPassword" name= 'password' type="password" placeholder="Create a password" />
+                                                        <label for="inputPassword">Password</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" id="inputPasswordConfirm" name = "confirm password" type="password" placeholder="Confirm password" />
+                                                        <label for="inputPasswordConfirm">Confirm Password</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                                                <!-- <a class="small" href="password.html" style = "color:aliceblue">Forgot Password?</a> -->
+                                                <button class="btn btn-primary" type = "submit" href = "/department/register" > Create Account </button>   
+                                            </div>
+                                            <!-- <div class="mt-4 mb-0">
+                                                <div class="d-grid"><a class="btn btn-primary btn-block" href="/department/register">Create Account</a></div>
+                                            </div> -->
+                                        </form>
+                                    </div>
+                                    <div class="card-footer text-center py-3">
+                                        <div class="small"><a href="/department/dashboard/login">Have an account? Go to login</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <footer class="py-4 mt-auto" style="background-color:rgba(73, 13, 2, 0.521)">
+                <div class="container-fluid px-4">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; Shohure Kotha 2021</div>
+                        <div>
+                            <a href="/privacy">Privacy Policy</a>
+                            &middot;
+                            
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="/static/js/scripts.js"></script>
+    </body>
+</html>

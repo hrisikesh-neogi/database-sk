@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Writing Heads</title>
+    <link rel="icon" type="image/x-icon" href="/static/assets/img/favicon.ico" />
+	<link rel="stylesheet" href="/static/user_profile/fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link href="/static/user_profile/css/user_bootstrap.min.css" rel="stylesheet">
+    <link href="/static/user_profile/css/templatemo-xtra-blog.css" rel="stylesheet">
+<!--
+    
+TemplateMo 553 Xtra Blog
+
+https://templatemo.com/tm-553-xtra-blog
+
+-->
+</head>
+<body>
+	<header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+                
+            </button>
+            <button onclick="window.open('/logout')" style=" background-color: #ff0000b4;
+							border : None;
+
+                            border-radius: 100px;
+                            color: white;
+                            padding: 7px 15px;
+                            text-align: center;
+                            text-decoration: none;
+                            display: inline-block;
+                            font-size: 16px;
+                            margin: 0px 0px;
+                            cursor: pointer;">
+                            Log Out
+				</button>
+
+                <button onclick="window.open('/')" style=" background-color: #ff66008e;
+                        border : None;
+
+                        border-radius: 100px;
+                        color: white;
+                        padding: px 15px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                        margin: 0px 0px;
+                        cursor: pointer;">
+                        Home Page
+                </button>
+                <button onclick="window.open('/user/profile')" style=" background-color: #ff6600d2;
+                        border : None;
+
+                        border-radius: 100px;
+                        color: white;
+                        
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                        margin: 0px 0px;
+                        cursor: pointer;">
+                        Profile
+                </button>
+            <div class="tm-site-header" href="/">
+                
+                <div class="mb-3 mx-auto tm-site-logo" >
+                <img src = "/static/login_Data/images/sk_logo_new.jpg" alt = "logo" class = 'tm-site-logo' href = "/">
+            </div>            
+                <h1 class="text-center" style = "font-family: garamond; font-size:30px;">Hello</h1>
+                <h1> 
+                    {{username}}
+                </h1>
+                <div class = 'text' style ="text-align: center;font-family: 'Courier New', Courier, monospace;">
+                    <p>
+                        Department: {{department}}
+                        <br> Your Pr : {{pr}} </br>
+                    </p>
+                    </p>
+
+                </div>
+            </div>
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                    <li class="tm-nav-item "><a href="/login/user_login/writing/home" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Your Home
+                    </a></li>
+                    <li class="tm-nav-item "><a href= "/login/user_login/writing/writing_department" class="tm-nav-link">
+                        <i class="fas fa-pen"></i>
+                        Your Department
+                    </a></li>
+                    <li class="tm-nav-item active"><a href="#" class="tm-nav-link">
+                        <i class="fas fa-users"></i>
+                        Your mentors
+                    </a></li>
+                    <li class="tm-nav-item"><a href="/login/user_login/writing/admins_details" class="tm-nav-link">
+                        <i class="fas fa-user-shield"></i>
+                        Admins
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="tm-mb-65">
+                <div class="tm-mb-65">
+                    <a href="https://facebook.com/shohurekotha20" class="tm-social-link">
+                        <i class="fab fa-facebook tm-social-icon"></i>
+                    </a>
+                    <a href="https://wa.me/message/QLKW3VMPCFBCP1" class="tm-social-link">
+                        <i class ="fab fa-whatsapp tm-social-icon"></i>
+                    </a>
+                    <a href="https://instagram.com/shohurekotha20/" class="tm-social-link">
+                        <i class="fab fa-instagram tm-social-icon"></i>
+                    </a>
+                </div>
+            <p class="tm-mb-80 pr-5 text-white">
+                <h3 class = "message" style = "color: rgb(255, 157, 0); font-size: 30px; font-weight: bold;">
+                    Welcome note! 
+                </h3>
+                Hey, Thanks for being a member of the SHOHOR. We always welcome fresh talents like you. 
+                We always appreciate your efforts and contributions for the Shohor community. We hope you will 
+                be an amazing part of the Shohor community. Hope you are comfortable here. We always want to listen 
+                to everyone. Your ideas and suggestions we pay attention to. We will always be there to help you. 
+            </p>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <main class="tm-main">
+            <!-- Search form -->
+            
+                    <!-- Search form -->
+                    <div class="row tm-row">
+                        <div class="col-12">
+                           <div class="heading" style = " text-align: center; color : #ffff; padding: 20px;
+                            
+                                display: block;
+                                height: 100px;
+                                font-size: 16px;
+                                text-align: inline;
+                                background-color: rgba(141, 89, 5, 0.507);
+                                width: 100;
+                                margin-right: 30px;
+                                border-radius: 20px;
+                                border-color: rgb(0, 0, 0);
+                                filter:  drop-shadow(0px 0px 5px rgb(0, 0, 0));
+                                font-size: 1rem;">
+                                <h1 class = "text" style = "font-size: 1.6rem;">
+                                    Writing Department 
+                                    <h5 class = "department" style = "font-family: 'Courier New', Courier, monospace;"> 
+                                    OF SHOHOR </h5>
+                                </h1>
+                            </div>
+                        </div>
+
+                    </div>    
+                    
+                    <div class="row tm-row tm-mb-60">
+                        <div class="col-12">
+                            <hr class="tm-hr-primary  tm-mb-55">
+                        </div>                
+                        <div class="col-lg-6 tm-mb-60 tm-person-col">
+                            <div class="media tm-person">
+                                <img src="/static/user_profile/img/hod/raya.jpg" alt="Image" class="img-fluid mr-4">
+                                <div class="media-body">
+                                    <h2 class="tm-color-primary tm-post-title mb-2">Raya Guha Das</h2>
+                                    <h3 class="tm-h3 mb-3">Content Head, Content 2, Grooming </h3>
+                                    <p class="mb-0 tm-line-height-short">
+                                        With her great content selection skills, she manages to choose the best content for 
+                                        Shohor. She is a very good mentor. She is a very good content head.
+                                        She, along with other content heads, manages to groom our content writers.
+                                        Well, Raya is one of the pillers of Shohor.
+
+                                    </p>
+                                    <div class = "social-contacts" style = "color:#ffff ;size: 50px; padding: 1 rem">
+                                        <i class="fab fa-whatsapp " >   +91 7001295528</i>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+            
+            <div class="row tm-row tm-mb-60">
+                <div class="col-12">
+                    <hr class="tm-hr-primary  tm-mb-55">
+                </div>                
+                <div class="col-lg-6 tm-mb-60 tm-person-col">
+                    <div class="media tm-person">
+                        <img src="/static/user_profile/img/hod/shan.jpg" alt="Image" class="img-fluid mr-4">
+                        <div class="media-body">
+                            <h2 class="tm-color-primary tm-post-title mb-2">Shantanu Biswas</h2>
+                            <h3 class="tm-h3 mb-3">Content Head, Content 2</h3>
+                            <p class="mb-0 tm-line-height-short">
+                                Shan is a very good mentor. He is very good when it comes to selecting contents. 
+                                He is a very creative too. He writes well, he tries to portray the life with his 
+                                words. The need of creative writings is very high, and shan is one of the best
+                                who can bring some best creative writings.
+                                
+                            </p>
+                            <div class = "social-contacts" style = "color:#ffff ;size: 50px; padding: 1 rem">
+                                <i class="fab fa-whatsapp " >   +91 9064405773 </i>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 tm-mb-60 tm-person-col">
+                    <div class="media tm-person">
+                        <img src="/static/user_profile/img/hod/soumya.jpg" alt="Image" class="img-fluid mr-4">
+                        <div class="media-body">
+                            <h2 class="tm-color-primary tm-post-title mb-2">Soumyajit Saha</h2>
+                            <h3 class="tm-h3 mb-3">Content Head, content 1, Grooming</h3>
+                            <p class="mb-0 tm-line-height-short">
+                                Soumyajit is a creative writer with his own style of writing horror stories.
+                                Soumya, along with Raya, grooms our writers with their knowledge of writing.
+                                He is the content head of content 1. He is a very good mentor. 
+
+                            </p>
+                            <div class = "social-contacts" style = "color:#ffff ;size: 50px; padding: 1 rem">
+                                <i class="fab fa-whatsapp " > +91 6291019122 </i>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-6 tm-mb-60 tm-person-col">  
+                    <div class="media tm-person">
+                        <img src="/static/user_profile/img/hod/vocal_debosmita.jpg" alt="Image" class="img-fluid mr-4">
+                        <div class="media-body">
+                            <h2 class="tm-color-primary tm-post-title mb-2">Debosmita Biswas</h2>
+                            <h3 class="tm-h3 mb-3">Head, recitation</h3>
+                            <p class="mb-0 tm-line-height-short">
+                                As recitation could have sometimes so many mistakes one could be doing, cutting the mistakes 
+                                Debosmita plays a very important role in keeping the recitation department running smoothly and efficiently, 
+                                and also in keeping the Shohor community alive.
+                            </p>
+                            <div class = "social-contacts" style = "color:#ffff ;size: 50px; padding: 1 rem">
+                                <i class="fab fa-whatsapp " > +91 8001548993 </i>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 tm-mb-60 tm-person-col">
+                    <div class="media tm-person">
+                        <img src="/static/user_profile/img/hod/vocal_anwesha.jpg" alt="Image" class="img-fluid mr-4">
+                        <div class="media-body">
+                            <h2 class="tm-color-primary tm-post-title mb-2">Anwesha Sur</h2>
+                            <h3 class="tm-h3 mb-3">Head, Music</h3>
+                            <p class="mb-0 tm-line-height-short">
+                                The SUR of the Shohor community. The unmatchable deep voice that goes beyond the hearts.
+                                Anwesha Sur is not only a good singer, but she's also a good leader too. A good composer too. You can check 
+                                her songs out on our social media pages.
+                            </p>
+                            <div class = "social-contacts" style = "color:#ffff ;size: 50px; padding: 1 rem">
+                                <i class="fab fa-whatsapp " > +91 7980471500 </i>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div> -->
+            </div>        
+            <div class="row tm-row tm-mb-40">
+                <div class="col-12">                    
+                    <!-- <div class="mb-4">
+                        <h2 class="pt-2 tm-mb-40 tm-color-primary tm-post-title">About this xtra blog</h2>
+                        <p>
+                            You can immediately download 
+                                <a rel="nofollow" href="https://templatemo.com/tm-553-xtra-blog" target="_blank">Xtra Blog Template</a> 
+                                from TemplateMo website for 100% free of charge. Etiam vehicula, tortor ac eleifend tincidunt, diam neque pellentesque ipsum, 
+                                a geugiat eros mauris eget lorem. Quisque in
+                            bibendum elit, in egestas turpis. Vestibulum ornare sollicitudin congue. Aliquam lorem mi, maximus at iaculis ut, viverra vel
+                            mauris. Duis congue luctus metus, sodales tincidunt lectus fringilla ut. Nunc tempus at magna sed vestibulum.
+                        </p>
+                        <p>
+                            Proin et arcu ligula. Praesent quis erat eu est solliditudin tristique ut in arcu. Donec bibendum ex id ligula semper dictum.
+                            Proin malesuada luctus auctor. Suspendisse ullamcorper, mi vel molestie ornare, arcu magna euismod ipsum, in
+                            malesuada nulla magna ut enim. Morbi lacinia magna sed sapien auctor, vitae luctus nunc cursus.
+                        </p>                            
+                    </div>                     -->
+                </div>
+            </div>
+            <div class="row tm-row tm-mb-120">
+                <div class="col-lg-4 tm-about-col">
+                    <div class="tm-bg-gray tm-about-pad">
+                        <div class="text-center tm-mt-40 tm-mb-60">
+                            <i class="fas fa-bezier-curve fa-4x tm-color-primary"></i>                            
+                        </div>                        
+                        <h2 class="mb-3 tm-color-primary tm-post-title">Department Rules</h2>
+                        <p class="mb-0 tm-line-height-short">
+                            <br>1. Writers are expected to be in active. </br>
+                            <br>2. Regular contents (writings) are expected to be
+                            submitted atleast twice a week. </br>
+                            <br>3. Writers are expected to coperate with their group mentors. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 tm-about-col">
+                    <div class="tm-bg-gray tm-about-pad">
+                        <div class="text-center tm-mt-40 tm-mb-60">
+                            <i class="fas fa-users-cog fa-4x tm-color-primary"></i>                            
+                        </div>                        
+                        <h2 class="mb-3 tm-color-primary tm-post-title">Teamwork</h2>
+                        <p class="mb-0 tm-line-height-short">
+                            Writing department is all about teamwork. Be in touch with your department heads and co-ordinators.
+                            Be active, be responsive and be a good team player. Always try to write creative writings. Take frequent 
+                            suggestions from your group mentors. 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>            
+            
+            <!-- <footer class="row tm-row">
+                <div class="col-md-6 col-12 tm-color-gray">
+                    Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-external-link">TemplateMo</a>
+                </div> -->
+                <div class="col-md-6 col-12 tm-color-gray tm-copyright"; style= "color: rgba(255, 255, 255, 0.329)">
+                   Copyright &copy; Shohure Kotha 2021
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="/static/user_profile/js/jquery.min.js"></script>
+    <script src="/static/user_profile/js/templatemo-script.js"></script>
+</body>
+</html>

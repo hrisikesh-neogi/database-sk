@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>DATA PAGE
+    FOR collection name:{{ collection_name }}</title>
+</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<h1 style="text-align: center">COLLECTION : {{collection_name}}</h1>
+
+<div class="content">
+    <div> 
+        <h2> Put writer Data </h2>  </div>
+    <div class="form">
+        <form action="/mongo/bulk_up" method = 'POST'>
+            <input type="text" name="member_name" placeholder="member name" required="required">
+            <input type = "text" name="Month" placeholder="month" required="required " >
+            <input type = "text" name="weeks" placeholder="1/2/3/4" required="required" >
+            <input type = "text" name="from_day" placeholder="from_day" required="required" >
+    
+
+
+            <br> <input type="submit" value="check for the data" style = "background-color: #a05a00;
+            border-radius: 12px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;"> <br>
+
+        </form>
+        <button onclick="window.open('/mongo')" style="background-color: #2c0112;
+                        border-radius: 12px;;
+                        color: white;
+                        padding: 15px 32px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                        margin: 4px 2px;
+                        cursor: pointer;">
+                        writers' data upload
+                    </button>
+    </div>
+</div>
+{% endblock %}

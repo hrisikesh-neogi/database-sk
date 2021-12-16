@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>New Registration</title>
+	<link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="/static/member_signup/css/montserrat-font.css">
+	<link rel="stylesheet" type="text/css" href="/static/member_signup/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="/static/member_signup/css/style.css"/>
+	<script type="text/javascript" src = "/static/js/member_signup.js"></script>
+</head>
+<body class="form-v10">
+	<div class="page-content">
+		
+		<div class="form-v10-content">
+			<h3 style = "color: #ffffff; 
+			font-family: 'Courier New', Courier, monospace;
+			filter: drop-shadow(0px 0px 5px #e00000);
+			text-align: center;
+			padding: -22px 0px;
+			
+				">hi! {{msg}}</h3>
+			
+			<form class="form-detail" action="/new_shohure_kotha_member_registration" method="post" id="myform">
+				
+				<div class="form-left">
+					<h2>General Infomation</h2>
+					
+					<!-- <div class="form-row">
+						<select name="title">
+						    <option class="option" value="title">Title</option>
+						    <option class="option" value="businessman">Businessman</option>
+						    <option class="option" value="reporter">Reporter</option>
+						    <option class="option" value="secretary">Secretary</option>
+						</select>
+						<span class="select-btn">
+						  	<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+					</div> -->
+					<div class="form-group">
+						<div class="form-row form-row-1" 
+						style = 
+						>
+							<input type="text" name="name" id="name" class="input-text" placeholder="Your Name" required>
+						</div>
+						
+					</div>
+					<!-- <div class="form-row">
+						<select name="position">
+						    <option value="position">Position</option>
+						    <option value="director">Director</option>
+						    <option value="manager">Manager</option>
+						    <option value="employee">Employee</option>
+						</select>
+						<span class="select-btn">
+						  	<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+					</div> -->
+					<div class="form-row">
+						<input type="text" name="email" class="email" id="email" placeholder="Email" autocomplete="off" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" required>
+					</div>
+					<!-- <div class="form-row">
+						<select name="country">
+						    <option value="country">Country</option>
+						    <option value="Vietnam">Vietnam</option>
+						    <option value="Malaysia">Malaysia</option>
+						    <option value="India">India</option>
+						</select>
+						<span class="select-btn">
+						  	<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+					</div> -->
+					<div class="form-group">
+						<div class="form-row form-row-3">
+							<input type="text" name="address" class="address" id="address" placeholder="Address" required>
+						</div>
+					</div>
+					
+					<div class="form-row">
+						<input type="text" name="whatsapp" class="whatsapp" id="whatsapp" placeholder="Phone Number ( WhatsApp )" required>
+					</div>
+					<div class="form-row">
+						<input type="text" name="phone" class="phone" id="phone" placeholder="Phone Number ( calling )" required>
+					</div>	
+					<div class="form-group">
+						<div class="form-row form-row-3">
+							
+							<input type="text" name="password" class="password" id="password" placeholder="Choose a password"  required>
+							
+							<!-- <button href="#" onclick="myFunction()" 
+							style = "border: 1px solid; border-radius: 5px;
+							background-color: rgba(7, 114, 255, 0.507); color: #000; padding: 5px;"
+							>
+							<i class="zmdi zmdi-eye"></i>
+							Show Password </button> -->
+							<i class="fa fa-eye" aria-hidden="true" id="togglePassword"></i>
+							
+						</div>
+						
+						<div class="form-row form-row-3">
+							
+							<input type="password" name="confirm_password" class="confirm_password" id="confirm_password" placeholder="Confirm password" onchange="check()" required />
+							
+							<span style="color:#f5f5f5;
+							filter: drop-shadow(0px 0px 5px #e00000);
+							" id='message'></span>
+						</div>
+					
+					</div>
+						<!-- <div class="form-row form-row-4">
+							<select name="employees">
+							    <option value="employees">Employees</option>
+							    <option value="trainee">Trainee</option>
+							    <option value="colleague">Colleague</option>
+							    <option value="associate">Associate</option>
+							</select>
+							<span class="select-btn">
+							  	<i class="zmdi zmdi-chevron-down"></i>
+							</span>
+						</div>
+					</div> -->
+					<!-- <div class="">
+					 <input type="checkbox" style="border: 1px solid; border-radius: 5px;
+					 background-color: rgba(7, 114, 255, 0.507); color: #000; 
+					 size: 1px 1 px;
+					
+					 " 
+						
+					
+					</div> --->
+					
+				
+				</div>
+				<div class="form-right">
+					<h2>Details That SHOHOR Requires</h2>
+					<div class="form-row">
+						<label for="joiningDate" style="color:#ff9100; font-size: 16 px;
+						align-items: center;
+						font-weight: 500;
+						">Date Of Birth :</label>
+						<input type="date" id="dob" class="form-control" name="DOB" required>
+						
+					</div>
+					<div class="form-row">
+						<label for="joiningDate" style="color:#ff9100; font-size: 16 px;
+						align-items: center;
+						font-weight: 500;
+						">Date Of Joining Shohure Kotha :</label>
+						<input type="date" id="joiningDate" class="form-control" name="joiningDate" placeholder="joiningDate" required>
+						
+					</div>
+					<div class="form-row">
+						<input type="text" name="occupation" class="occupation" id="occupation" placeholder="Occupation" required>
+					</div>
+					<div class="form-row">
+						<input type="text" name="hobbies" class="hobbies" id="hobbies" placeholder="Hobbies / Interests" required>
+					</div>
+					
+					<p  style="color:#ff9100; font-size: 16 px;
+						align-items: center;
+						font-weight: 500;
+						padding-left: 2.5rem;
+						">
+						You are joining as a (required) - 
+					</p>
+					<div class="form-row form-row-2">
+						
+						<select name="department" required ="required">
+							<option value="writer">Writer</option>
+							<option value="calligrapher">Calligrapher</option>
+							<option value="singer">Singer</option>
+							<option value="artist">Artist</option>
+							<option value="editor(text/video)">Editor(text/video)</option>
+							<option value="vocal artist">Vocal artist</option>
+							<option value="photographer">Photographer</option>
+							<option value="dancer">Dancer</option>
+							<option value="pr">Pr Coordinator</option>
+							
+						</select>
+						<span class="select-btn">
+							<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+					</div>
+					<p  style="color:#ff9100; font-size: 16 px;
+						align-items: center;
+						font-weight: 500;
+						padding-left: 2.5rem;
+						">You are joining as anything else ? 
+						<p style="color:#ff9100; font-size:12px;padding-left: 2.5rem;">( skip if you are joining in one department.) 
+						Default = No
+						</p>
+						
+					</p>
+					<div class="form-row form-row-2">
+						
+						<select name="department_2">
+							<option value="no">No</option>
+							<option value="writer">Writer</option>
+							<option value="calligrapher">Calligrapher</option>
+							<option value="singer">Singer</option>
+							<option value="artist">Artist</option>
+							<option value="editor(text/video)">Editor(text/video)</option>
+							<option value="vocal artist">Vocal artist</option>
+							<option value="photographer">Photographer</option>
+							<option value="dancer">Dancer</option>
+							<option value="pr">Pr Coordinator</option>
+							
+						</select>
+						<span class="select-btn">
+							<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+					</div>
+					
+					<p  style="color:#ff9100; font-size: 14px;
+						align-items: center;
+						font-weight: 500;
+						padding-left: 2.5rem;
+						"> Except shohure kotha, 
+						<br>name the pages you are working at -  </b>
+						<p style="color:#ff9100; font-size:12px;padding-left: 2.5rem;">( skip if you are joining in one department.) </p></p>
+					
+					<div class="form-row">
+						<input type="pages" name="pages" id="pages" class="input-text"  placeholder="Page Names">
+					</div>
+					<div class="form-checkbox">
+						<label class="container"><p>I do accept the <a href="https://drive.google.com/file/d/1rDM7bV3g8ez_2oA93BVuA21EiMR4VLuf/view?usp=sharing" class="text" target="_blank" rel="noopener noreferrer" >Terms and Conditions</a> of your Page.</p>
+						  	<input type="checkbox" name="ok with rules?" value="yes">
+						  	<span class="checkmark"></span>
+						</label>
+					</div>
+					<div class="form-row-last">
+						<input type="submit" name="register" class="register" value="Register">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script>
+		function check() {
+			if(document.getElementById('password').value ===
+					document.getElementById('confirm_password').value) {
+				document.getElementById('message').innerHTML = "Passwords matched";
+				document.getElementById("submit").disabled = true;
+			} else {
+				document.getElementById('message').innerHTML = "Passwords do not match";
+				document.getElementById("submit").disabled = false;
+			}
+		}
+	</script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

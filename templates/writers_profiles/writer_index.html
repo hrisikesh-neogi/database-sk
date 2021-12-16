@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile</title>
+    <link rel="icon" type="image/x-icon" href="/static/assets/img/favicon.ico" />
+	<link rel="stylesheet" href="/static/user_profile/fontawesome/css/all.min.css"> 
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+    <link href="/static/user_profile/css/user_bootstrap.min.css" rel="stylesheet">
+    <link href="/static/user_profile/css/templatemo-xtra-blog.css" rel="stylesheet">
+<!--
+    
+TemplateMo 553 Xtra Blog
+
+https://templatemo.com/tm-553-xtra-blog
+
+-->
+</head>
+<body>
+	<header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <button onclick="window.open('/logout')" style=" background-color: #ff0000b4;
+							border : None;
+
+                            border-radius: 100px;
+                            color: white;
+                            padding: 7px 15px;
+                            text-align: center;
+                            text-decoration: none;
+                            display: inline-block;
+                            font-size: 16px;
+                            margin: 0px 0px;
+                            cursor: pointer;">
+                            Log Out
+				</button>
+
+                <button onclick="window.open('/')" style=" background-color: #ff66008e;
+                        border : None;
+
+                        border-radius: 100px;
+                        color: white;
+                        padding: px 15px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                        margin: 0px 0px;
+                        cursor: pointer;">
+                        Home Page
+                </button>
+                <button onclick="window.open('/user/profile')" style=" background-color: #ff6600d2;
+                        border : None;
+
+                        border-radius: 100px;
+                        color: white;
+                        
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                        margin: 0px 0px;
+                        cursor: pointer;">
+                        Profile
+                </button>
+            <div class="tm-site-header">
+                
+                <div class="mb-3 mx-auto tm-site-logo">
+                <img src = "/static/login_Data/images/sk_logo_new.jpg" alt = "logo" class = 'tm-site-logo'>
+            </div>            
+                <h1 class="text-center" style = "font-family: garamond; font-size:30px;">Hello</h1>
+                <h1> 
+                    {{username}}
+                </h1>
+                <div class = 'text' style ="text-align: center;font-family: 'Courier New', Courier, monospace;">
+                    <p>
+                        Department: {{department}}
+                        <br> Your Pr : {{pr}} </br>
+                    </p>
+                    </p>
+
+                </div>
+            </div>
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                    <li class="tm-nav-item active"><a href="#" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Your Home
+                    </a></li>
+                    <li class="tm-nav-item"><a href= "/login/user_login/writing/writing_department" class="tm-nav-link">
+                        <i class="fas fa-pen"></i>
+                        Your Department
+                    </a></li>
+                    <li class="tm-nav-item"><a href="/login/user_login/writing/writing_hod" class="tm-nav-link">
+                        <i class="fas fa-users"></i>
+                        Your mentors
+                    </a></li>
+                    <li class="tm-nav-item"><a href="/login/user_login/writing/admins_details" class="tm-nav-link">
+                        <i class="fas fa-user-shield"></i>
+                        Admins
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="tm-mb-65">
+                <div class="tm-mb-65">
+                    <a href="https://facebook.com/shohurekotha20" class="tm-social-link">
+                        <i class="fab fa-facebook tm-social-icon"></i>
+                    </a>
+                    <a href="https://wa.me/message/QLKW3VMPCFBCP1" class="tm-social-link">
+                        <i class ="fab fa-whatsapp tm-social-icon"></i>
+                    </a>
+                    <a href="https://instagram.com/shohurekotha20/" class="tm-social-link">
+                        <i class="fab fa-instagram tm-social-icon"></i>
+                    </a>
+                </div>
+            <p class="tm-mb-80 pr-5 text-white">
+                <h3 class = "message" style = "color: rgb(255, 157, 0); font-size: 30px; font-weight: bold;">
+                    Welcome note! 
+                </h3>
+                Hey, Thanks for being a member of the SHOHOR. We always welcome fresh talents like you. 
+                We always appreciate your efforts and contributions for the Shohor community. We hope you will 
+                be an amazing part of the Shohor community. Hope you are comfortable here. We always want to listen 
+                to everyone. Your ideas and suggestions we pay attention to. We will always be there to help you. 
+            </p>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <main class="tm-main">
+            <!-- Search form -->
+            <div class="row tm-row">
+                <div class="col-12">
+                   <div class="heading" style = " text-align: center; color : #ffff; padding: 20px;
+                    
+                    display: block;
+                    height: 100px;
+                    font-size: 16px;
+                    text-align: inline;
+                    background-color: rgba(141, 89, 5, 0.507);
+                    width: 100;
+                    margin-right: 30px;
+                    border-radius: 20px;
+                    border-color: rgb(0, 0, 0);
+                    filter:  drop-shadow(0px 0px 5px rgb(0, 0, 0));
+                    font-size: 1rem;">
+                    <h1 class = "text" style = "font-size: 1.6rem;">
+                        Hey, {{username}}!  
+                        <h5 class = "department" style = "font-family: 'Courier New', Courier, monospace;"> 
+                        Dept : {{department}}</h5>
+                    </h1>
+
+                                       
+   
+            </div>            
+            <div class="row tm-row">
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a class="effect-lily tm-post-link tm-pt-60">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fposts%2F430650545436924&show_text=false&width=500" 
+                        width="300" height="370" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <span class="position-absolute tm-new-badge">Popular</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Writing</h2>
+                        <span style = "color:rgb(0, 204, 255)"> Prity's Best</span>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        The beast, the masterpiece, <u>Priti Sarkar</u> is not only inspiring, but also is a great
+                        achievement for Shohor. We are proud to have writers like her. Hope our other writers will find it inspiring and feel motivated.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Prity Sarkar </span>
+                        <span class="tm-color-primary">Writing</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Writing</span>
+                        <span>Shohure Kotha</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a class="effect-lily tm-post-link tm-pt-60">
+                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fposts%2F413297830505529&show_text=true&width=500"
+                             width="300" height="370" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <span class="position-absolute tm-new-badge">Popular</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Writing</h2>
+                        <span style = "color:rgb(0, 204, 255)"> Sayani's Best</span>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        The writing itself was a masterstroke of <u>Sayani Maity.</u> It's not only inspiring, but also a great
+                        achievement. We are proud to have writers like her. Hope our other writers will find it inspiring and feel motivated.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Sayani Maity</span>
+                        <span class="tm-color-primary">Writing</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Writing</span>
+                        <span>Shohure Kotha</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a  class="effect-lily tm-post-link tm-pt-60" >
+                        <!--   -->
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fposts%2F422837332884912&show_text=false&width=500" 
+                        width="300" height="370" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                       
+                        <span class="position-absolute tm-new-badge">Popular</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Midnight Shohor</h2>
+                        <span style="color:aqua">Subhanjan's best</span>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        <a rel="nofollow" href= "https://www.facebook.com/hashtag/midnightshohor" target="_blank">Midnight Shohor</a> is a midnight segment
+                        of Shohor. It is a very popular segment of Shohor. We use to portray the midnight through this segment. Eveyrday at midnight, it use to be 
+                        posted from Shohure Kotha. We are proud to have writers like Subhanjan. Hope our other writers will find it inspiring and feel motivated.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Subhanjan Baral</span>
+                        <span class="tm-color-primary">Writing</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Shohure Kotha</span>
+                        <span>Midnight Shohor</span>
+                    </div>
+                </article> 
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a  class="effect-lily tm-post-link tm-pt-60">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fposts%2F417961536705825&show_text=false&width=500" 
+                        width="300" height="370" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <span class="position-absolute tm-new-badge">Popular</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Conversational Story</h2>
+                        <span style = "color:rgb(0, 204, 255)"> Trisha's Best</span>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        We are proud to have writers like Trisha. She is a writer of creativity. When she is writing, she is always trying to make
+                        something new. We use to post her stories from Shohure Kotha. Hope our other writers will find it inspiring and feel motivated.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary"> Trisha Sarkar</span>
+                        <span class="tm-color-primary">Writing</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Conversational Writing</span>
+                        <span>Shohure Kotha</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a  class="effect-lily tm-post-link tm-pt-60">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fposts%2F426769879158324&show_text=false&width=500"
+                         width="300" height="370" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <span class="position-absolute tm-new-badge">Popular</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Short Story</h2>
+                        <span style = "color:rgb(0, 204, 255)"> Raya's Best</span>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        We are proud to have writers like Raya. She is a writer of creativity. With her creativity
+                        she has created a lot of short stories. We are proud to have writers like her. Hope our other writers will find it inspiring and feel motivated.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Raya Guha Das</span>
+                        <span class="tm-color-primary">Writing</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Writing</span>
+                        <span>Shohure Kotha</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="https://www.facebook.com/hashtag/midnightshohor"  target="_blank" rel="noopener noreferrer" class="effect-lily tm-post-link tm-pt-20">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fposts%2F427867062381939&show_text=false&width=500"
+                         width="300" height="370" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                         <span class="position-absolute tm-new-badge">Midnight Shohor</span>
+                         <h2 class="tm-pt-30 tm-color-primary tm-post-title">Midnight Shohor</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        As told before, we recreate the midnight through this segment, We try to portray each and every small and sweet as well as nostalgic 
+                    moments here, not only through <u>THE MIDNIGHT SHOHOR</u> segment, but through every other segment.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Midnight Shohor</span>
+                        <span class="tm-color-primary">Shohure Kotha</span> 
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Writing</span>
+                        <span>Shohure Kotha</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a  class="effect-lily tm-post-link tm-pt-20">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fposts%2F427697075732271&show_text=false&width=500" 
+                        width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <span class="position-absolute tm-new-badge">Stories</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">The Revenge Of Nature</h2>
+                    </a>                    
+                    <p class="tm-pt-30"  style = "font-size:20px; font-family:Kalpurush;">
+                        
+                        
+                            - না, কালকেই আমার ডিভোর্স চাই।
+                            <br> - কালকেই? </br>
+                            - হ্যাঁ৷ কাল মানে কা- ল- ই।
+                            <br> রাতে ঠিকমতো ঘুম হল না শ্রেয়ার৷ ১ বছর হয়েছে বিয়েটা হয়েছে শুভমের সাথে৷ প্রথমে পণের জন্য ওকে চাপ দেয়, আর এখন ডিভোর্সের।
+                            গ্রেজুয়েশনের পর পরই বিয়ে হয় শ্রেয়ার৷ হঠাৎ করে যে কীভাবে পরিস্থিতি এতটা বদলে গেল, সেটা কিছুতেই বুঝতে পারেনা শ্রেয়া ৷
+                            <br>- কী হল? কী ভাবলে...
+                            <br> - হ্যাঁ, ভাবলাম তুমি যা চাইছো তাই হবে।
+                            <br> - সাব্বাস! খুব দেরিতে বুঝলেও শেষমেশ যে বিষয়টা তোমার মগজে ঢুকেছে, এতেই আমি খুশি। একটা কথা তোমাকে খুব বলতে ইচ্ছে করছে। বুঝলে, 'সবকিছু না এই পৃথিবীতে জোর করে ধরে রাখা যায় না।'
+                            কথাটার শেষদিকে কিছুটা ব্যঙ্গের সুরেই বলল শুভম।
+                            <br> এরপর দেখতে দেখতে অনেকটা সময় পেরিয়ে এসেছে দুজন। ডিভোর্সের পর ১০টা বছর কেটেছে ৷ শুভম এরপর আরও একটা বিয়ে করেছে। এবারের কনেপক্ষ অবস্থাসম্পন্ন তাই পণ, গা ভরতি গয়না- কোনো কিছুরই অভাব হয়নি।
+                            <br> - শ্রেয়া ম্যাম আছেন?
+                            <br> - হ্যাঁ ভেতরে আসুন।
+                            <br> শ্রেয়া এখন প্রতিষ্ঠিত একজন উকিল। শিক্ষিত সমাজে তার এখন প্রচুর নামডাক। আজ আরও একটা ডিভোর্সের কেস এসেছে তার হাতে। কিছুটা আনমনা হয়ে যায় শ্রেয়া। হয়তো ১০ বছর আগের কোনো এক স্মৃতির গোড়া ধাক্কা খায় শক্ত পাথরে।
+                            <br> - নিন সাইনটা করে দিন ৷
+                            <br> শুভমের সাইন করার বিন্দুমাত্র ইচ্ছে না থাকলেও কোনোক্রমে তুলে নেয় পেনটা৷ একফোঁটা জল গাল বেয়ে পেপারে এসে পরে ৷
+                            চোখের সামনে ভেসে  ওঠে কিছু আবছা মুখ, নাড়া পড়ে ১০ বছর আগের সেই স্মৃতির দরজায় ৷
+                            <br> - কালকেই আমার ডিভোর্স চাই৷
+                            <br> - কাল মানে কা-ল-ই।
+                            <br> - সবকিছু না এই পৃথিবীতে জোর করে ধরে রাখা যায় না। বুঝলেন ম্যাডাম?
+                            <br> © শুভশ্রী
+                       </br>
+                        
+                        </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Stories</span>
+                        <span class="tm-color-primary">Subhashri</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Writing</span>
+                        <span>Shohure Kotha</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a  class="effect-lily tm-post-link tm-pt-20">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fposts%2F425476082621037&show_text=false&width=500"
+                         width="300" height="370" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                         <span class="position-absolute tm-new-badge">Stories Of Winter</span>
+                         <h2 class="tm-pt-30 tm-color-primary tm-post-title">International writers' contents</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        We have not only writers and members from india or west bengal, but we also have writers from other countries 
+                        like U.S.A and BANGLADESH. We are proud to have them with us at our Shohor.
+                        Kamran Chowdhury is a friend from BANGLADESH. He's with us for so many months, we appreciate people like him
+                        who goes beyond their boundaries and creates bonds. He's a great friend and a great writer. You can read his 
+                        stories on our <a href="http://www.facebook.com/shohurekotha20">Facebook page. </a>
+                        <br> <span class="tm-color-primary">#International_Members</span>
+                        <span class="tm-color-primary">#CreativityHasNoBoundaries</span>
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Kamran Chowdhury</span>
+                        <span class="tm-color-primary">Bangladesh</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Shohure Kotha</span>
+                        <span>Writers</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a  class="effect-lily tm-post-link tm-pt-20">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshohurekotha20%2Fposts%2F421389093029736&show_text=false&width=500" 
+                        width="300" height="370" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Life-Talks in form of Writing</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                    We, here, in Shohure Kotha, belive in the power of words. We believe that words are the most 
+                    powerful thing in the world. If we can't portray our life in words, then we can't express our
+                    feelings in form of writing literatures. We believe that writing is the most powerful tool to
+                    express our feelings. Kudos to Priti Sarkar, who has written such a creative Writing.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Priti Sarkar</span>
+                        <span class="tm-color-primary">Writer</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>Shohure Kotha</span>
+                        <span>Writing</span>
+                    </div>
+                </article>
+            </div>
+            <!-- <div class="row tm-row tm-mt-100 tm-mb-75">
+                <div class="tm-prev-next-wrapper">
+                    <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next disabled tm-mr-20">Prev</a>
+                    <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next">Next</a>
+                </div>
+                <div class="tm-paging-wrapper">
+                    <span class="d-inline-block mr-3">Page</span>
+                    <nav class="tm-paging-nav d-inline-block">
+                        <ul>
+                            <li class="tm-paging-item active">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">1</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">2</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">3</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">4</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>                
+            </div>            
+            <footer class="row tm-row">
+                <hr class="col-12">
+                <div class="col-md-6 col-12 tm-color-gray">
+                    Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-external-link">TemplateMo</a>
+                </div> -->
+                <div class="col-md-6 col-12 tm-color-gray tm-copyright" style="color: rgba(255, 255, 255, 0.37)">
+                    Copyright &copy; Shohure Kotha 2021
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="/static/user_profile/js/jquery.min.js"></script>
+    <script src="/static/user_profile/js/templatemo-script.js"></script>
+</body>
+</html>
